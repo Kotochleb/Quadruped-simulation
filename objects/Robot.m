@@ -4,6 +4,7 @@ classdef Robot
       RL = Leg;
       FR = Leg;
       FL = Leg;
+      hipZOffset            {mustBeNumeric}  % [mm]
       
       body      = Body;
       enclosure = Body;
