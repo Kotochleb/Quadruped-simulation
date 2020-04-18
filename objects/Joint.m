@@ -1,11 +1,6 @@
 classdef Joint
     properties
-      
-        % PID
-        Kp            {mustBeNumeric}  % [no unit]
-        Ki            {mustBeNumeric}  % [no unit]
-        Kd            {mustBeNumeric}  % [no unit]
-        N             {mustBeNumeric}  % [no unit]
+        controller = Controller;
         
         % Internal Mechanics
         base_angle    {mustBeNumeric}  % [deg]
@@ -13,7 +8,6 @@ classdef Joint
         damping       {mustBeNumeric}  % [Nm/(deg/s)]
         
         % Limits
-        torque_lim    {mustBeNumeric}  % [Nm]
         speed_lim     {mustBeNumeric}  % [rpm]
         
         % Upper Limits

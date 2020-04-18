@@ -4,6 +4,7 @@ classdef Body
         length        {mustBeNumeric}  % [mm]
         width         {mustBeNumeric}  % [mm]
         thickness     {mustBeNumeric}  % [mm]
+        radius        {mustBeNumeric}  % [mm]
         dimension                      % [mm]
         position                       % [mm]
         mass          {mustBeNumeric}  % [g]

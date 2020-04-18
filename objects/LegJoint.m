@@ -1,14 +1,8 @@
 classdef LegJoint
     properties
         % Bsic properties
-        length        {mustBeNumeric}  % [mm]
-        width         {mustBeNumeric}  % [mm]
-        thickness     {mustBeNumeric}  % [mm]
-        dimension                    % [mm]
-        mass          {mustBeNumeric}  % [g]
-        density       {mustBeNumeric}  % [kg/m^3]
-        color                        % [no unit]
-        
+        body = Body
+
         % Contact Parameters
         sphere_rad    {mustBeNumeric}  % [m]
         stat_frict    {mustBeNumeric}  % [no unit]

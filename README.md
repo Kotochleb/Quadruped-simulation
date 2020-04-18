@@ -12,7 +12,12 @@ it easier to modify and duplicate `Simulink` modified blocks.
 
 Simulation requires following `Matlab Toolboxes`:
 - `Simulink Simscape`
+- `Simulink Simscape Driveline`
 - `Simulink Simscape Multibody`
+
+## Changelog
+
+- 1.1 Added power consumption output. Moved leg bodies to body objects, fixed single leg inverse kinematics.
 
 ## License
 
