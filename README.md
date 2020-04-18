@@ -17,7 +17,10 @@ Simulation requires following `Matlab Toolboxes`:
 
 ## Changelog
 
-- 1.1 Added power consumption output. Moved leg bodies to body objects, fixed single leg inverse kinematics.
+1.1 Moved leg bodies to body objects, fixed single leg inverse kinematics. In logged data:
+    - Angular speed of motor is now in rpm.
+    - Added pure motor torque as an option.
+    - Added current measurement as an option.
 
 ## License
 
