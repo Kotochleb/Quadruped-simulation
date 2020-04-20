@@ -28,14 +28,14 @@ Simulation requires following Matlab Toolboxes:
   - Gearbox wear as integral of absolute value of angular acceleration with threshold value.
   - Comparison of different simulation results.
 
-### Changed
+#### Changed
 - `controller` block is now called `motor`.
 - Planetary gearbox block is now simple gain.
 - Logged data:
   - Angular speed of motor is now both in rpm and rad/s.
   - Added pure motor torque as an option.
 
-### Removed
+#### Removed
 - Simulink Simscape Driveline blocks.
 
 
