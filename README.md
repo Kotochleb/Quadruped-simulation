@@ -16,6 +16,17 @@ Simulation requires following Matlab Toolboxes:
 
 ## Changelog
 
+### 0.2.1 - 24.04.2020
+#### Added
+- Motor inertia relative to gearbox ratio.
+
+#### Changed
+- Motor angular speed saturation takes value from script.
+
+#### Fixed
+- Script now runs.
+
+
 ### 0.2 - 20.04.2020
 #### Added
 - Leg joint blocks in Simulink inherit after `LegJoint` object.
