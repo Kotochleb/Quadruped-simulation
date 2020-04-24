@@ -11,20 +11,26 @@ it easier to modify and duplicate Simulink modified blocks.
 ## Requirements
 
 Simulation requires following Matlab Toolboxes:
-- Simulink Simscape
-- Simulink Simscape Multibody
+- Simulink Simscape;
+- Simulink Simscape Multibody;
+- [Simscape Multibody Contact Forces Library](https://www.mathworks.com/matlabcentral/fileexchange/47417-simscape-multibody-contact-forces-library);
 
 ## Changelog
 
-### 0.2.1 - 24.04.2020
+
+### 0.2.2 - 24.04.2020
 #### Added
-- Motor inertia relative to gearbox ratio.
+- Motor inertia.
+- Robot position measurement.
 
 #### Changed
 - Motor angular speed saturation takes value from script.
+- `motor` block is now `actuator`.
+- Moved blocks connected with `Joint` object to `joint` block.
+- Updated `leg` blocks in `quadruped.slx`.
 
 #### Fixed
-- Script now runs.
+- `leg_sim_data_validation.mlx` now runs.
 
 
 ### 0.2 - 20.04.2020

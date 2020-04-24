@@ -1,6 +1,6 @@
 classdef Joint
     properties
-        controller = Controller;
+        actuator = Actuator;
         
         % Internal Mechanics
         base_angle    {mustBeNumeric}  % [deg]
