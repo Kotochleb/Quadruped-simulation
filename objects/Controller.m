@@ -7,6 +7,8 @@ classdef Controller
         N             {mustBeNumeric}  % [no unit]
         
         torque_lim           {mustBeNumeric}  % [Nm]
+        speed_lim            {mustBeNumeric}  % [rad/s]
+        motor_inertia        {mustBeNumeric}  % [kg/m^2]
         ring_to_sun          {mustBeNumeric}  % [mm]
         torque_to_current
     end
