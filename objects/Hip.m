@@ -13,9 +13,9 @@ classdef Hip
         GbxColor                            % [mm]
         
         % Contact Parameters
-        sphereRad   {mustBeNumeric}         % [m]
-        statFrict   {mustBeNumeric}         % [no unit]
-        kineFrict   {mustBeNumeric}         % [no unit]
+        sphere_rad   {mustBeNumeric}         % [m]
+        stat_frict   {mustBeNumeric}         % [no unit]
+        kine_frict   {mustBeNumeric}         % [no unit]
         
         joint = Joint
         
