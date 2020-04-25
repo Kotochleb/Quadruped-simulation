@@ -13,10 +13,13 @@ it easier to modify and duplicate Simulink modified blocks.
 Simulation requires following Matlab Toolboxes:
 - Simulink Simscape;
 - Simulink Simscape Multibody;
-- [Simscape Multibody Contact Forces Library](https://www.mathworks.com/matlabcentral/fileexchange/47417-simscape-multibody-contact-forces-library);
 
 ## Changelog
 
+
+### 0.2.2.1 - 25.04.2020
+#### Changed
+- [Simscape Multibody Contact Forces Library](https://www.mathworks.com/matlabcentral/fileexchange/47417-simscape-multibody-contact-forces-library) now replaced with Simulink Simscape Multibody standard blocks for shorter simulation time.
 
 ### 0.2.2 - 24.04.2020
 #### Added
