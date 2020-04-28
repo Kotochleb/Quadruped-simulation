@@ -13,9 +13,21 @@ it easier to modify and duplicate Simulink modified blocks.
 Simulation requires following Matlab Toolboxes:
 - Simulink Simscape;
 - Simulink Simscape Multibody;
+- Deep Learning Toolbox;
+- Reinforcement Learning Toolbox;
 
 ## Changelog
 
+### 0.2.3 - 28.04.2020
+
+### Added
+- `RL Agnet` block.
+- `isdone` and `reward` blocks.
+- `Isdone` and `Reward` objects.
+- `isdone` counts errors with different weight before stopping simulation.
+- `isdone` takes in account robot angle, height and hip angle.
+- `RL_param.mlx`.
+- `RL_reward.mlx`.
 
 ### 0.2.2.1 - 25.04.2020
 #### Changed
