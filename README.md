@@ -18,6 +18,15 @@ Simulation requires following Matlab Toolboxes:
 
 ## Changelog
 
+### 0.3.0 - 29.04.2020
+
+### Added
+- simple DDPGAgent usung examples from (https://github.com/Kotochleb/Quadruped-simulation/tree/RL)
+
+### Changed
+- `observation` block
+- switched to use `*.m` instead of `*.mlx`
+
 ### 0.2.3 - 28.04.2020
 
 ### Added
