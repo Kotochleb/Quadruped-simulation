@@ -17,11 +17,14 @@ Simulation requires following Matlab Toolboxes:
 - Reinforcement Learning Toolbox;
 
 ## Changelog
+### 0.3.1 - 30.04.2020
+### Changed 
+- `actor network` - now it's 3 independent networks with different angle constraints
 
 ### 0.3.0 - 29.04.2020
 
 ### Added
-- simple DDPGAgent usung examples from (https://github.com/Kotochleb/Quadruped-simulation/tree/RL)
+- simple DDPGAgent usung examples from (https://github.com/mathworks/msra-walking-robot)
 
 ### Changed
 - `observation` block
