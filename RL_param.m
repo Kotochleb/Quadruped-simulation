@@ -79,7 +79,7 @@ legNetwork = [
     leakyReluLayer('Name', 'LegActorLRelu2')
     fullyConnectedLayer(4, 'Name', 'LegActorFC3')                       
     tanhLayer('Name','LegActorTanh')
-    scalingLayer('Name', 'LegActorRescaledActions', 'Scale', pi/4, 'Bias', 0)
+    scalingLayer('Name', 'LegActorRescaledActions', 'Scale', pi/3, 'Bias', 0) % [-pi/3 pi/3]
 ];
 
 kneeNetwork = [
@@ -89,7 +89,7 @@ kneeNetwork = [
     leakyReluLayer('Name', 'KneeActorLRelu2')
     fullyConnectedLayer(4, 'Name', 'KneeActorFC3')                       
     tanhLayer('Name','KneeActorTanh')
-    scalingLayer('Name', 'KneeActorRescaledActions', 'Scale', pi/4, 'Bias', 0)
+    scalingLayer('Name', 'KneeActorRescaledActions', 'Scale', 3*pi/8, 'Bias', 3*pi/8) % [0 3pi/4]
 ];
 
 obsInput = imageInputLayer([obsDim 1 1],'Normalization','none','Name','observation');
