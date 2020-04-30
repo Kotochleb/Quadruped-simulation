@@ -26,8 +26,8 @@ isdone.err_int_threshold = 2.5;
 reward = Reward;
 %distance
 reward.x_gain = -0.1;
-reward.y_gain = 20;
-reward.z_gain = -1;
+reward.y_gain = 10;
+reward.z_gain = -0.1;
 reward.z_desire_val = 30;
 reward.xy_gain = 1;
 %speed
@@ -39,4 +39,4 @@ reward.wx_gain = -1;
 reward.wy_gain = -1;
 reward.wz_gain = -1;
 %time
-reward.time_gain = 10;
+reward.time_gain = 3;
