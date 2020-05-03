@@ -61,6 +61,7 @@ critic = rlRepresentation(criticNetwork,criticOptions, ...
 %% ACTOR
 % Create the actor network layers
 <<<<<<< HEAD
+<<<<<<< HEAD
 actorLayerSizes = [256 256];
 actorNetwork = [
     imageInputLayer([obsDim 1 1],'Normalization','none','Name','observation')
@@ -79,6 +80,8 @@ actorNetwork = [
     scalingLayer('Name', 'ActorScaledActions', 'Scale', pi/2, 'Bias', 0)
     ];
 =======
+=======
+>>>>>>> 8b6369268ebfa46d3c8bfc2eb0e043a4ab65bdf8
 actorLayerSizes = [64 64];
 
 hipNetwork = [

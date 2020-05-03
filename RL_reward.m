@@ -24,6 +24,7 @@ isdone.err_int_threshold = 2.5;
 
 %% rewardard
 reward = Reward;
+<<<<<<< HEAD
 
 % distance
 reward.x_gain = -1;
@@ -31,6 +32,14 @@ reward.y_gain = 30;
 reward.z_desire_val = robot.RR.y;
 reward.z_desire_val_reward = 25;
 
+=======
+%distance
+reward.x_gain = -0.1;
+reward.y_gain = 10;
+reward.z_gain = -0.1;
+reward.z_desire_val = 30;
+reward.xy_gain = 1;
+>>>>>>> 8b6369268ebfa46d3c8bfc2eb0e043a4ab65bdf8
 %speed
 reward.vx_gain = -0.1;
 reward.vy_gain = 10;
