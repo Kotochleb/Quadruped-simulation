@@ -9,11 +9,11 @@ Ts = 0.025;
 agentOptions = rlDDPGAgentOptions;
 agentOptions.SampleTime = Ts;
 agentOptions.DiscountFactor = 0.99;
-agentOptions.MiniBatchSize = 256;
-agentOptions.ExperienceBufferLength = 1e6;
+agentOptions.MiniBatchSize = 128;
+agentOptions.ExperienceBufferLength = 1e5;
 agentOptions.TargetSmoothFactor = 1e-3;
 agentOptions.NoiseOptions.MeanAttractionConstant = 5;
-agentOptions.NoiseOptions.Variance = 0.4;
+agentOptions.NoiseOptions.Variance = 0.2;
 agentOptions.NoiseOptions.VarianceDecayRate = 1e-5;
 
 %% Training Options
@@ -22,8 +22,8 @@ trainingOptions.MaxEpisodes = 10000;
 trainingOptions.MaxStepsPerEpisode = Tf/Ts;
 trainingOptions.ScoreAveragingWindowLength = 100;
 trainingOptions.StopTrainingCriteria = 'AverageReward';
-trainingOptions.StopTrainingValue = 110;
+trainingOptions.StopTrainingValue = 300000;
 trainingOptions.SaveAgentCriteria = 'EpisodeReward';
-trainingOptions.SaveAgentValue = 150;
+trainingOptions.SaveAgentValue = 300000; % nie zapisujemy bo i tak gówno robi
 trainingOptions.Plots = 'training-progress';
 trainingOptions.Verbose = true;

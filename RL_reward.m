@@ -12,7 +12,7 @@ isdone.wz_threshold = deg2rad(90);
 isdone.wz_gain = 1;
 
 
-isdone.fall_height = 15;
+isdone.fall_height = 10;
 isdone.fall_gain = 100;
 
 isdone.hip_contact_force_threshold = 30;
@@ -31,8 +31,8 @@ reward.y_gain = 30;
 reward.z_desire_val = robot.RR.y;
 reward.z_desire_val_reward = 25;
 
-% speed
-reward.vx_gain = -1;
+%speed
+reward.vx_gain = -0.1;
 reward.vy_gain = 10;
 reward.vz_gain = -1;
 
