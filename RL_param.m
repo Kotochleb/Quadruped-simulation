@@ -1,4 +1,4 @@
-useGPU = false;
+useGPU = true;
 
 %% Create the observation info
 obsDim = 37;
@@ -78,7 +78,7 @@ actorNetwork = [
             'Weights',2*5e-3*(rand(actDim,actorLayerSizes(2))-0.5), ... 
             'Bias',2*5e-3*(rand(actDim,1)-0.5))                       
     tanhLayer('Name','ActorTanh1')
-    scalingLayer('Name', 'ActorScaledActions', 'Scale', pi, 'Bias', pi)
+    scalingLayer('Name', 'ActorScaledActions', 'Scale', pi/2, 'Bias', 0)
     ];
 
 % Create actor representation

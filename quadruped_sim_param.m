@@ -89,7 +89,7 @@ robot.RR.upper_joint = defLegJoint;
 robot.RR.lower_joint = defLegJoint;
 robot.RR.hip.joint.base_angle = 90;
 robot.RR.x = -90;
-robot.RR.y = 100;
+robot.RR.y = 300;
 
 
 robot.RL = robot.RR;
@@ -153,7 +153,7 @@ robot.odrv_r = robot.odrv_l;
 robot.odrv_l.position = [-90, 0, 0];
 robot.odrv_r.position = [90, 0, 0];
 
-plane = [5, 5, 0.3];
+plane = [5, 5, 0.03];
 
 clear E;
 clear S;
