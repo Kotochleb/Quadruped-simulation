@@ -153,7 +153,7 @@ robot.odrv_r = robot.odrv_l;
 robot.odrv_l.position = [-90, 0, 0];
 robot.odrv_r.position = [90, 0, 0];
 
-plane = [5, 5, 0.03];
+plane = [5, 50, 0.03];
 
 clear E;
 clear S;

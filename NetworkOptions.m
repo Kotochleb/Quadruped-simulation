@@ -18,12 +18,12 @@ agentOptions.NoiseOptions.VarianceDecayRate = 1e-5;
 
 %% Training Options
 trainingOptions = rlTrainingOptions;
-trainingOptions.MaxEpisodes = 10000;
+trainingOptions.MaxEpisodes = 100000;
 trainingOptions.MaxStepsPerEpisode = Tf/Ts;
 trainingOptions.ScoreAveragingWindowLength = 100;
 trainingOptions.StopTrainingCriteria = 'AverageReward';
-trainingOptions.StopTrainingValue = 300000;
+trainingOptions.StopTrainingValue = 3000000;
 trainingOptions.SaveAgentCriteria = 'EpisodeReward';
-trainingOptions.SaveAgentValue = 300000; % nie zapisujemy bo i tak gówno robi
+trainingOptions.SaveAgentValue = 3000000; % nie zapisujemy bo i tak gówno robi
 trainingOptions.Plots = 'training-progress';
 trainingOptions.Verbose = true;

@@ -24,22 +24,13 @@ isdone.err_int_threshold = 2.5;
 
 %% rewardard
 reward = Reward;
-<<<<<<< HEAD
 
 % distance
 reward.x_gain = -1;
-reward.y_gain = 30;
+reward.y_gain = 7.5;
 reward.z_desire_val = robot.RR.y;
 reward.z_desire_val_reward = 25;
 
-=======
-%distance
-reward.x_gain = -0.1;
-reward.y_gain = 10;
-reward.z_gain = -0.1;
-reward.z_desire_val = 30;
-reward.xy_gain = 1;
->>>>>>> 8b6369268ebfa46d3c8bfc2eb0e043a4ab65bdf8
 %speed
 reward.vx_gain = -0.1;
 reward.vy_gain = 10;
@@ -54,15 +45,15 @@ reward.wz_gain = -1;
 reward.hip_contact_threshold = 30;
 reward.hip_contact_gain = -100;
 
-reward.hip_angle = deg2rad(80);
-reward.hip_angle_gain = -0.5;
+reward.hip_angle = deg2rad(65);
+reward.hip_angle_gain = -30;
 
-reward.upper_joint_angle = deg2rad(80);
-reward.upper_joint_angle_gain = -0.5;
+reward.upper_joint_angle = deg2rad(75);
+reward.upper_joint_angle_gain = -15;
 
-reward.lower_joint_angle = deg2rad(80);
-reward.lower_joint_angle_gain = -0.5;
+reward.lower_joint_angle = deg2rad(87);
+reward.lower_joint_angle_gain = -15;
 
 
 %time
-reward.time_gain = 3;
+reward.time_gain = 7;
