@@ -70,7 +70,7 @@ hipNetwork = [
     leakyReluLayer('Name', 'HipActorLRelu2')
     fullyConnectedLayer(4, 'Name', 'HipActorFC3')
     tanhLayer('Name','HipActorTanh')
-    scalingLayer('Name', 'HipActorRescaledActions', 'Scale', pi/4, 'Bias', 0)
+    scalingLayer('Name', 'HipActorRescaledActions', 'Scale', pi/8, 'Bias', 0)
 ];
 
 legNetwork = [
@@ -125,8 +125,29 @@ end
 actor = rlRepresentation(actorNetwork,actorOptions, ...
                          'Observation',{'observation'},env.getObservationInfo, ...
                          'Action',{'Actions'},env.getActionInfo);
-
+                     
 %% AGENT
 agentObj = rlDDPGAgent(actor,critic,agentOptions);
+
 %% TRAIN
-trainingResults = train(agentObj,env,trainingOptions)
+pause on;
+saveDir = 'savedAgents';
+modelSaveName = "trainedAgent_05_05_2020_1803";
+
+while true
+%     load(strcat(saveDir, '/', modelSaveName));
+    trainingResults = train(agentObj,env,trainingOptions)
+
+    reset(agentObj); % Clears the experience buffer
+    curDir = pwd;
+    cd(saveDir)
+    modelSaveName = ['trainedAgent_' datestr(now,'mm_DD_YYYY_HHMM')];
+    save(modelSaveName,'agentObj','trainingResults');
+    cd(curDir);
+    
+
+    disp('Press any button (but not power nor belly button) in 5 seconds to break loop. Well ctrl+c have to work...');
+    pause(5)
+    disp('Continuing training.');
+    
+end

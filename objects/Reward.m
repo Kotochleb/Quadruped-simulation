@@ -2,7 +2,8 @@ classdef  Reward
    properties
     
         x_gain                      {mustBeNumeric}  
-        y_gain                      {mustBeNumeric}  
+        y_gain                      {mustBeNumeric}
+        z_gain                      {mustBeNumeric} 
         z_desire_val_reward         {mustBeNumeric}  
         z_desire_val                {mustBeNumeric}  
         xy_gain                     {mustBeNumeric}  

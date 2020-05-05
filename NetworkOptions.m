@@ -9,7 +9,7 @@ Ts = 0.025;
 agentOptions = rlDDPGAgentOptions;
 agentOptions.SampleTime = Ts;
 agentOptions.DiscountFactor = 0.99;
-agentOptions.MiniBatchSize = 128;
+agentOptions.MiniBatchSize = 256;
 agentOptions.ExperienceBufferLength = 1e5;
 agentOptions.TargetSmoothFactor = 1e-3;
 agentOptions.NoiseOptions.MeanAttractionConstant = 5;
@@ -18,7 +18,7 @@ agentOptions.NoiseOptions.VarianceDecayRate = 1e-5;
 
 %% Training Options
 trainingOptions = rlTrainingOptions;
-trainingOptions.MaxEpisodes = 100000;
+trainingOptions.MaxEpisodes = 500;
 trainingOptions.MaxStepsPerEpisode = Tf/Ts;
 trainingOptions.ScoreAveragingWindowLength = 100;
 trainingOptions.StopTrainingCriteria = 'AverageReward';

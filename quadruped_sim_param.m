@@ -3,7 +3,7 @@ addpath("objects/");
 
 defActuator = Actuator;
 defActuator.torque_lim  = 1;        % [Nm]
-defActuator.gear_ratio = 19;
+defActuator.gear_ratio = 15;
 defActuator.speed_lim   = 5000 * pi /30;       % [rad/s]
 defActuator.motor_inertia   = 1300;       % [g/mm^2]
 

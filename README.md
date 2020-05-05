@@ -17,8 +17,23 @@ Simulation requires following Matlab Toolboxes:
 - Reinforcement Learning Toolbox;
 
 ## Changelog
+
+### 0.3.2 - 05.05.2020
+### Changed
+- Reward is less likely to give high negative values.
+- More strict simulation stop conditions.
+- Simplified reward function.
+- Reward function no longer uses integrals.
+
+### Added
+- Training data is now saved and can be restored.
+- Training is saved every 500 episodes.
+
+### Fixed
+- Algorithm seems to be learning.
+
 ### 0.3.1 - 30.04.2020
-### Changed 
+### Changed
 - `actor network` - now it's 3 independent networks with different angle constraints
 
 ### 0.3.0 - 29.04.2020
